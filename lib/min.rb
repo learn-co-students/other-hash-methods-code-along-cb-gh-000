@@ -10,4 +10,9 @@ require 'pry'
 
 def get_the_min(groceries)
   #code your solution here!
+
+  # On a Hash: return the key/value pair whose **key** is the lowest value (the Key NAME !!).
+  #groceries.min #=> [:dairy, ["milk", "yogurt", "cheese"]]
+  # On an Array:
+  groceries.values.flatten.min #=> "broccoli"
 end
