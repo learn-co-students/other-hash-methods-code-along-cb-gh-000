@@ -1,6 +1,6 @@
 require_relative 'spec_helper'
 require_relative '../lib/keys.rb'
-
+__END__
 
 describe "#get_the_keys" do
   let :groceries do
