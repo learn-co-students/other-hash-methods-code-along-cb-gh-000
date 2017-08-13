@@ -1,13 +1,7 @@
-require 'pry'
-
-#This is the groceries hash we'll be passing in to the get_the_values method
-# groceries = {
-#  dairy: ["milk", "yogurt", "cheese"],
-#  vegetable: ["carrots", "broccoli", "cucumbers"],
-#  meat: ["chicken", "steak", "salmon"],
-#  grains: ["rice", "pasta"]
-# }
-
+# Method uses #values to return an array of the values of the keys in the hash
+# that the method has been called upon (groceries).
 def get_the_values(groceries)
-  #code your solution here!
+  # Chaining the #flatten method after the #values method will convert the array
+  # being returned into a single dimensional one.
+  return groceries.values.flatten
 end
