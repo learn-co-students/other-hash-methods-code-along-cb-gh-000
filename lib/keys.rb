@@ -1,13 +1,6 @@
-require 'pry'
-
-#This is the groceries hash we'll be passing in to the get_the_keys method
-# groceries = {
-#  dairy: ["milk", "yogurt", "cheese"],
-#  vegetable: ["carrots", "broccoli", "cucumbers"],
-#  meat: ["chicken", "steak", "salmon"],
-#  grains: ["rice", "pasta"]
-# }
-
+# Method returns an array containing all the keys in the hash that #keys has
+# been called on (groceries).
 def get_the_keys(groceries)
-  #code your solution here!
+  # The #keys method is used to to collect all of the keys of the hash.
+  return groceries.keys
 end
