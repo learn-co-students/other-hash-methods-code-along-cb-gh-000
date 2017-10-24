@@ -9,5 +9,12 @@ require 'pry'
 # }
 
 def get_the_values(groceries)
+  array = []
   #code your solution here!
+  groceries.each{ | key, value |
+    value.each{ | word |
+      array << word
+    }
+  }
+  array
 end
