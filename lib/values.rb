@@ -9,5 +9,6 @@ require 'pry'
 # }
 
 def get_the_values(groceries)
-  #code your solution here!
+  # groceries.values -> returns an array with 4 arrays
+  groceries.values.flatten # -> returns a flatted(unidimensional) array
 end
