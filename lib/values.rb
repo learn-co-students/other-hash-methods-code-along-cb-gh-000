@@ -10,4 +10,5 @@ require 'pry'
 
 def get_the_values(groceries)
   #code your solution here!
+  nested_arr = groceries.values.flatten
 end
