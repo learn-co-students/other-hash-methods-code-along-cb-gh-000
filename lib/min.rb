@@ -9,5 +9,13 @@ require 'pry'
 # }
 
 def get_the_min(groceries)
-  #code your solution here!
+  min = groceries.values[0][0]
+  groceries.each do |food_group, items|
+    items.each do |item|
+      if item < min
+        min = item
+      end
+    end
+  end
+  min
 end
