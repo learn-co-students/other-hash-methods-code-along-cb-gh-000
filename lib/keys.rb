@@ -9,5 +9,8 @@ require 'pry'
 # }
 
 def get_the_keys(groceries)
+  groceries.map do |keys,food|
+    keys
+  end
   #code your solution here!
 end
