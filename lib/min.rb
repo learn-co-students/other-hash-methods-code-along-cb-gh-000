@@ -1,13 +1,21 @@
 require 'pry'
 
-#This is the groceries hash we'll be passing in to the get_the_min method
-# groceries = {
-#  dairy: ["milk", "yogurt", "cheese"],
-#  vegetable: ["carrots", "broccoli", "cucumbers"],
-#  meat: ["chicken", "steak", "salmon"],
-#  grains: ["rice", "pasta"]
-# }
+
+groceries = {
+  dairy: ["milk", "yogurt", "cheese"],
+  vegetable: ["carrots", "broccoli", "cucumbers"],
+  meat: ["chicken", "steak", "salmon"],
+  grains: ["rice", "pasta"]
+}
 
 def get_the_min(groceries)
-  #code your solution here!
+  array = []
+  groceries.each do |key, value|
+  
+  value.each do |item|
+    array.push(item)
+end
+end
+  sorted = array.sort { |a,b| a <=> b }
+  sorted[0]
 end
