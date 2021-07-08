@@ -9,5 +9,7 @@ require 'pry'
 # }
 
 def get_the_min(groceries)
-  #code your solution here!
+  groceries.values.min do |a, b|
+    a.min <=> b.min
+  end.min
 end
